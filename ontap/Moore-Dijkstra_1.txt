@@ -1,0 +1,626 @@
+void MooreDijkstra(Graph *pG, int s=1)
+{
+    int u, v, it;
+    for (u = 1; u <= pG->n; u++)
+    {
+        pi[u] = oo;
+        mark[u] = 0;
+    }
+//tu viet vong for tren
+
+    pi[s=1] = 0;
+    p[s=1] = -1;
+pi[1]=0; p[1]= -1
+
+    for (it = 1; it < pG->n; it++)
+    {
+it = 1
+                int j, min_pi = oo;
+                for (j = 1; j <= pG->n; j++)
+        j=1  
+                if (mark[j=1] == 0 && pi[j=1] < min_pi)
+                (0==0 && 0 < oo) dung
+                {
+                        min_pi = pi[j=1]=0;
+                        u = j=1;
+                }
+        j=2
+                if (mark[j=2] == 0 && pi[j=2] < min_pi)
+                (0==0 && oo < 0) sai
+                {
+                    
+                }
+        j=3->j=8 cung nhu vay        
+        mark[u=1] = 1;
+
+        for (v = 1; v <= pG->n; v++)
+        v=1
+                if (pG->W[u=1][v=1] != NO_EDGE && mark[v=1] == 0)
+                (0 != 0 && 1== 0) sai
+                       
+        v=2
+                 if (pG->W[u=1][v=2] != NO_EDGE && mark[v=2] == 0)
+                (7 != 0 && 0== 0) dung
+                        if (pi[u=1] + pG->W[u=1][v=2] < pi[v=2])
+                        (0 + 7 < oo) dung
+                        {
+                        pi[v=2] = pi[u=1] + pG->W[u=1][v=2]= 7;
+                        p[v=2] = u= 1;
+                        }
+        v=3
+                 if (pG->W[u=1][v=3] != NO_EDGE && mark[v=3] == 0)
+                (9 != 0 && 0== 0) dung
+                        if (pi[u=1] + pG->W[u=1][v=3] < pi[v=3])
+                        (0 + 9 < oo) dung
+                        {
+                        pi[v=3] = pi[u=1] + pG->W[u=1][v=3]= 9;
+                        p[v=3] = u= 1;
+                        }
+        v=4
+                if (pG->W[u=1][v=4] != NO_EDGE && mark[v=4] == 0)
+                (0 != 0 && 0== 0) sai
+                      
+        v=5
+                 if (pG->W[u=1][v=5] != NO_EDGE && mark[v=5] == 0)
+                (14 != 0 && 0 == 0) dung
+                        if (pi[u=1] + pG->W[u=1][v=5] < pi[v=2])
+                        (0 + 14 < oo) dung
+                        {
+                        pi[v=5] = pi[u=1] + pG->W[u=1][v=5]= 14;
+                        p[v=5] = u= 1;
+                        }
+        v=6
+                if (pG->W[u=1][v=6] != NO_EDGE && mark[v=6] == 0)
+                (0 != 0 && 0== 0) sai
+                       
+        v=7
+                if (pG->W[u=1][v=7] != NO_EDGE && mark[v=7] == 0)
+                (0 != 0 && 0== 0) sai
+                       
+        v=8
+                if (pG->W[u=1][v=8] != NO_EDGE && mark[v=8] == 0)
+                (0 != 0 && 0== 0) sai
+                      
+it = 2
+                int j, min_pi = oo;
+                for (j = 1; j <= pG->n; j++)
+        j=1  
+                if (mark[j=1] == 0 && pi[j=1] < min_pi)
+                (1==0 && 0 < oo) sai - bo qua
+                {
+                      
+                }
+        j=2
+                if (mark[j=2] == 0 && pi[j=2] < min_pi)
+                (0==0 && 7 < oo) d
+                {
+                        min_pi = pi[j=2]=7;
+                        u = j=2;
+                }
+        j=3
+                if (mark[j=3] == 0 && pi[j=3] < min_pi)
+                (0==0 && 9 < 7) sai - bo qua
+                {
+                      
+                }
+        j=4
+                if (mark[j=4] == 0 && pi[j=4] < min_pi)
+                (0==0 && oo < oo) s - bo qua
+                {
+                       
+                }
+        j=5
+                if (mark[j=5] == 0 && pi[j=5] < min_pi)
+                (0==0 && 14 < 7) s - bo qua
+                {
+                        
+                }
+        j=6 7 8
+                if (mark[j=4] == 0 && pi[j=4] < min_pi)
+                (0==0 && oo < oo) s - bo qua
+                {
+                
+                }
+              
+        mark[u=2] = 1;
+
+        for (v = 1; v <= pG->n; v++)
+        v=1
+                if (pG->W[u=2][v=1] != NO_EDGE && mark[v=1] == 0)
+                (0 != 0 && 1== 0) sai
+                       
+                        }
+        v=2
+                 if (pG->W[u=2][v=2] != NO_EDGE && mark[v=2] == 0)
+                (0 != 0 && 0== 0) s bq
+                       
+        v=3
+                 if (pG->W[u=2][v=3] != NO_EDGE && mark[v=3] == 0)
+                (10 != 0 && 0== 0) dung
+                        if (pi[u=2] + pG->W[u=2][v=3] < pi[v=3])
+                        (7 + 10 < 9) sai bq
+                        {
+                        pi[v=3] = pi[u=1] + pG->W[u=1][v=3]= 9;
+                        p[v=3] = u= 1;
+                        }
+        v=4
+                if (pG->W[u=2][v=4] != NO_EDGE && mark[v=4] == 0)
+                (15 != 0 && 0== 0) d
+                        if (pi[u] + pG->W[u][v] < pi[v])
+                        (7 + 15 < oo) dung
+                        {
+                        pi[v4] = pi[u2] + pG->W[u2][v4]=7 + 15=22;
+                        p[v=4] = u=2;
+                        }
+        v=5
+                 if (pG->W[u=2][v=5] != NO_EDGE && mark[v=5] == 0)
+                (0!= 0 && 0 == 0) sai
+                       
+        v=6
+                if (pG->W[u=2][v=6] != NO_EDGE && mark[v=6] == 0)
+                (0 != 0 && 0== 0) sai
+                      
+        v=7
+                if (pG->W[u=2][v=7] != NO_EDGE && mark[v=7] == 0)
+                (0 != 0 && 0== 0) sai
+                     
+        v=8
+                if (pG->W[u=2][v=8] != NO_EDGE && mark[v=8] == 0)
+                (0 != 0 && 0== 0) sai
+                       
+        
+    }
+it = 3
+                int j, min_pi = oo;
+                for (j = 1; j <= pG->n; j++)
+        j=1  
+                if (mark[j=1] == 0 && pi[j=1] < min_pi)
+                (1==0 && 0 < oo) sai - bo qua
+               
+        j=2
+                if (mark[j=2] == 0 && pi[j=2] < min_pi)
+                (1==0 && 7 < oo) s
+               
+        j=3
+                if (mark[j=3] == 0 && pi[j=3] < min_pi)
+                (0==0 && 9 < oo)d
+                {
+                        min_pi = pi[j=3]=9;
+                        u = j=3;
+                }
+        j=4
+                if (mark[j=4] == 0 && pi[j=4] < min_pi)
+                (0==0 && 22 < 9) s - bo qua
+              
+        j=5
+                if (mark[j=5] == 0 && pi[j=5] < min_pi)
+                (0==0 && 14 < 9) s - bo qua
+             
+        j=6 7 8
+                if (mark[j=4] == 0 && pi[j=4] < min_pi)
+                (0==0 && oo < oo) s - bo qua
+               
+              
+        mark[u=3] = 1;
+
+        for (v = 1; v <= pG->n; v++)
+        v=1
+                if (pG->W[u=3][v=1] != NO_EDGE && mark[v=1] == 0)
+                (0 != 0) sai
+                        
+        v=2
+                 if (pG->W[u=3][v=2] != NO_EDGE && mark[v=2] == 0)
+                (0 != 0 && 1== 0) s bq
+                        if (pi[u=1] + pG->W[u=1][v=2] < pi[v=2])
+                        (0 + 7 < oo) dung
+                        {
+                        pi[v=2] = pi[u=1] + pG->W[u=1][v=2]= 7;
+                        p[v=2] = u= 1;
+                        }
+        v=3
+                 if (pG->W[u=3][v=3] != NO_EDGE && mark[v=3] == 0)
+                (0 != 0 && 1== 0) s - bo qua
+                       
+        v=4
+                if (pG->W[u=3][v=4] != NO_EDGE && mark[v=4] == 0)
+                (11 != 0 && 0== 0) d
+                        if (pi[u] + pG->W[u][v] < pi[v])
+                        (9 + 11 < 22) dung
+                        {
+                        pi[v4] = pi[u=3] + pG->W[u=3][v4]=9 + 11=20;
+                        p[v=4] = u=3;
+                        }
+        v=5
+                 if (pG->W[u=3][v=5] != NO_EDGE && mark[v=5] == 0)
+                (2!= 0 && 0 == 0) d
+                        if (pi[u=3] + pG->W[u=3][v=5] < pi[v=5])
+                        (9 + 2 < 14) dung
+                        {
+                        pi[v=5] = pi[u=3] + pG->W[u=3][v=5]= 9+2 = 11;
+                        p[v=5] = u= 3;
+                        }
+        v=6
+                if (pG->W[u=3][v=6] != NO_EDGE && mark[v=6] == 0)
+                (0 != 0 && 0== 0) sai
+                       
+        v=7
+                if (pG->W[u=3][v=7] != NO_EDGE && mark[v=7] == 0)
+                (0 != 0 && 0== 0) sai
+                       
+        v=8
+                if (pG->W[u=3][v=8] != NO_EDGE && mark[v=8] == 0)
+                (0 != 0 && 0== 0) sai
+                       
+        
+it = 4
+                int j, min_pi = oo;
+                for (j = 1; j <= pG->n; j++)
+        j=1  
+                if (mark[j=1] == 0 && pi[j=1] < min_pi)
+                (1==0 s && ) sai - bo qua
+                
+        j=2
+                if (mark[j=2] == 0 && pi[j=2] < min_pi)
+                (1==0 s && ) s
+      
+        j=3
+                if (mark[j=3] == 0 && pi[j=3] < min_pi)
+                (1==0 s && )s
+            
+        j=4
+                if (mark[j=4] == 0 && pi[j=4] < min_pi)
+                (0==0 && 20 < oo)d
+                {
+                        min_pi = pi[j=4]=20;
+                        u = j=4;
+                }
+        j=5
+                if (mark[j=5] == 0 && pi[j=5] < min_pi)
+                (0==0 && 11 < 20) d
+                {
+                        min_pi = pi[j=5]=11;
+                        u = j=5;
+                }
+        j=6 7 8
+                if (mark[j=6] == 0 && pi[j=4] < min_pi)
+                (0==0 && oo < 11 s) s - bo qua
+           
+              
+        mark[u=5] = 1;
+
+        for (v = 1; v <= pG->n; v++)
+        v=1
+                if (pG->W[u=5][v=1] != NO_EDGE && mark[v=1] == 0)
+                (0 != 0 sai && 1== 0) sai
+                     
+        v=2
+                 if (pG->W[u=5][v=2] != NO_EDGE && mark[v=2] == 0)
+                (0 != 0 sai && 1== 0) s bq
+                        if (pi[u=1] + pG->W[u=1][v=2] < pi[v=2])
+                        (0 + 7 < oo) dung
+                        {
+                        pi[v=2] = pi[u=1] + pG->W[u=1][v=2]= 7;
+                        p[v=2] = u= 1;
+                        }
+        v=3
+                 if (pG->W[u=5][v=3] != NO_EDGE && mark[v=3] == 0)
+                (0 != 0 SAI && 1== 0) s - bo qua
+                    
+        v=4
+                if (pG->W[u=5][v=4] != NO_EDGE && mark[v=4] == 0)
+                (0 != 0 sai && 0== 0) s
+                        if (pi[u] + pG->W[u][v] < pi[v])
+                        (9 + 11 < 22) dung
+                        {
+                        pi[v4] = pi[u=3] + pG->W[u=3][v4]=9 + 11=20;
+                        p[v=4] = u=3;
+                        }
+        v=5
+                 if (pG->W[u=5][v=5] != NO_EDGE && mark[v=5] == 0)
+                (0!= 0 sai && ) s
+                     
+        v=6
+                if (pG->W[u=5][v=6] != NO_EDGE && mark[v=6] == 0)
+                (9 != 0 && 0 == 0) dung
+                        if (pi[u=5] + pG->W[u=5][v=6] < pi[v =6])
+                        (11+ 9 < oo)
+                        {
+                        pi[v=6] = pi[u] + pG->W[u][v]=11+ 9 = 20;
+                        p[v] = u;
+                        }
+        v=7
+                if (pG->W[u=5][v=7] != NO_EDGE && mark[v=7] == 0)
+                (0 != 0 sai &&) sai
+                    
+        v=8
+                if (pG->W[u=5][v=8] != NO_EDGE && mark[v=8] == 0)
+                (0 != 0 sai bo qua vi ...&& 0== 0) sai
+                       
+it = 5
+                int j, min_pi = oo;
+                for (j = 1; j <= pG->n; j++)
+        j=1  
+                if (mark[j=1] == 0 && pi[j=1] < min_pi)
+                (1==0 s && ) sai - bo qua
+                {
+                        
+                }
+        j=2
+                if (mark[j=2] == 0 && pi[j=2] < min_pi)
+                (1==0 s && ) s
+                {
+                }
+        j=3
+                if (mark[j=3] == 0 && pi[j=3] < min_pi)
+                (1==0 s && )s
+                {
+                       
+                }
+        j=4
+                if (mark[j=4] == 0 && pi[j=4] < min_pi)
+                (1==0 && 20 < oo) dung
+                        min_pi = pi[j=4]=20;
+                        u = j=4;
+                }
+        j=5
+                if (mark[j=5] == 0 && pi[j=5] < min_pi)
+                (1==0 ) s
+                {
+                       i[j];
+                        u = j=;
+                }
+        j=6 
+                if (mark[j=6] == 0 && pi[j=6] < min_pi)
+                (0==0 && 20 < 20 s) s - bo qua
+                {
+                      
+                }
+              
+        j=7 
+                if (mark[j=7] == 0 && pi[j=7] < min_pi)
+                (0==0 && oo < 20 s) s - bo qua
+                {
+                        
+                }
+              
+        j=8 
+                if (mark[j=8] == 0 && pi[j=8] < min_pi)
+                (0==0 && oo < 20 s) s - bo qua
+                {
+                       
+                }
+              
+        mark[u=4] = 1;
+
+        for (v = 1; v <= pG->n; v++)
+        v=1
+                if (pG->W[u=4][v=1] != NO_EDGE && mark[v=1] == 0)
+                (0 != 0 sai ) sai
+                        
+        v=2
+                 if (pG->W[u=4][v=2] != NO_EDGE && mark[v=2] == 0)
+                (0 != 0 sai ) s bq
+                      
+        v=3
+                 if (pG->W[u=3][v=3] != NO_EDGE && mark[v=3] == 0)
+                (0 != 0 SAI ) s - bo qua
+                       
+        v=4
+                if (pG->W[u=4][v=4] != NO_EDGE && mark[v=4] == 0)
+                (0 != 0 sai ) s -bq
+                       
+        v=5
+                 if (pG->W[u=4][v=5] != NO_EDGE && mark[v=5] == 0)
+                (0!= 0 sai && ) s -bq
+                       
+        v=6
+                if (pG->W[u=4][v=6] != NO_EDGE && mark[v=6] == 0)
+                (6 != 0 && 0 == 0) dung
+                        if (pi[u=4] + pG->W[u=4][v=6] < pi[v =6])
+                        (20 + 6 < 20) sai
+                       
+        v=7
+                if (pG->W[u=4][v=7] != NO_EDGE && mark[v=7] == 0)
+                (0 != 0 sai &&) sai
+                        
+        v=8
+                if (pG->W[u=4][v=8] != NO_EDGE && mark[v=8] == 0)
+                (0 != 0 sai bo qua ) sai
+                       
+        
+it = 6
+                int j, min_pi = oo;
+                for (j = 1; j <= pG->n; j++)
+        j=1  
+                if (mark[j=1] == 0 && pi[j=1] < min_pi)
+                (1==0 s && ) sai - bo qua
+                {
+                      
+                }
+        j=2
+                if (mark[j=2] == 0 && pi[j=2] < min_pi)
+                (1==0 s && ) s
+                {
+                }
+        j=3
+                if (mark[j=3] == 0 && pi[j=3] < min_pi)
+                (1==0 s && )s
+                {
+                     
+                }
+        j=4
+                if (mark[j=4] == 0 && pi[j=4] < min_pi)
+                (0==0 && 20 < oo) dung{
+                      
+                }
+        j=5
+                if (mark[j=5] == 0 && pi[j=5] < min_pi)
+                (1==0 ) s
+                {
+                    
+                }
+        j=6 
+                if (mark[j=6] == 0 && pi[j=6] < min_pi)
+                (0==0 && 20 < oo )dung
+                {
+                        min_pi = pi[j=6]=20;
+                        u = j=6;
+                }
+              
+        j=7 
+                if (mark[j=7] == 0 && pi[j=7] < min_pi)
+                (0==0 && oo < 20 s) s - bo qua
+                {
+                       
+                }
+              
+        j=8
+                if (mark[j=8] == 0 && pi[j=8] < min_pi)
+                (0==0 && oo < 20 s) s - bo qua
+                {
+                       
+                }
+              
+        mark[u=6] = 1;
+
+        for (v = 1; v <= pG->n; v++)
+        v=1
+                if (pG->W[u=6][v=1] != NO_EDGE && mark[v=1] == 0)
+                (0 != 0 sai && 1== 0) sai bo qus
+                      
+        v=2
+                 if (pG->W[u=6][v=2] != NO_EDGE && mark[v=2] == 0)
+                (0 != 0 sai && 1== 0) s bq
+                      
+        v=3
+                 if (pG->W[u=6][v=3] != NO_EDGE && mark[v=3] == 0)
+                (0 != 0 SAI && 1== 0) s - bo qua
+                  
+        v=4
+                if (pG->W[u=6][v=4] != NO_EDGE && mark[v=4] == 0)
+                (0 != 0 sai && 0== 0) s
+                     
+        v=5
+                 if (pG->W[u=6][v=5] != NO_EDGE && mark[v=5] == 0)
+                (0!= 0 sai && ) s
+                        
+        v=6
+                if (pG->W[u=6][v=6] != NO_EDGE && mark[v=6] == 0)
+                (6 != 0 && 0 == 0) s
+                       
+        v=7
+                if (pG->W[u=6][v=7] != NO_EDGE && mark[v=7] == 0)
+                (6 != 0  && 0 == 0) dung
+                        if (pi[u=6] + pG->W[u=6][v7] < pi[v=7])
+                        (20 + 6 < oo)
+                        {
+                        pi[v=7] = pi[u=6] + pG->W[u=6][v=7]=26;
+                        p[v=7] = u=6;
+                        }
+        v=8
+                if (pG->W[u=6][v=8] != NO_EDGE && mark[v=8] == 0)
+                (8 != 0 && 0== 0) dung
+                        if (pi[u=6] + pG->W[u][v=8] < pi[v])
+                        (20 + 8 <oo)
+                        {
+                        pi[v=8] = pi[u=6] + pG->W[u=6][v=8]=20+ 8 = 28;
+                        p[v=8] = u=6;
+                        }
+        
+it = 7
+                int j, min_pi = oo;
+                for (j = 1; j <= pG->n; j++)
+        j=1  
+                if (mark[j=1] == 0 && pi[j=1] < min_pi)
+                (1==0 s && ) sai - bo qua
+                {
+                        
+                }
+        j=2
+                if (mark[j=2] == 0 && pi[j=2] < min_pi)
+                (1==0 s && ) s
+                {
+                      
+                }
+        j=3
+                if (mark[j=3] == 0 && pi[j=3] < min_pi)
+                (1==0 s && )s
+                {
+                      
+                }
+        j=4
+                if (mark[j=4] == 0 && pi[j=4] < min_pi)
+                (1==0 && ) s
+                      {
+                }
+        j=5
+                if (mark[j=5] == 0 && pi[j=5] < min_pi)
+                (1==0 ) s
+                {
+                       
+                }
+        j=6 
+                if (mark[j=6] == 0 && pi[j=6] < min_pi)
+                (1==0) s - bo qua
+                {
+                      
+                }
+              
+        j=7 
+                if (mark[j=7] == 0 && pi[j=7] < min_pi)
+                (0==0 && o) s - bo qua
+                {
+                        min_pi = pi[j=7]=26;
+                        u = j=7;
+                }
+              
+        j=8 
+                if (mark[j=8] == 0 && pi[j=8] < min_pi)
+                (0==0 && 28 < 27 s) bo qua
+                {
+                      
+                }
+              
+        mark[u=7] = 1;
+
+        for (v = 1; v <= pG->n; v++)
+        v=1
+                if (pG->W[u=7][v=1] != NO_EDGE && mark[v=1] == 0)
+                (0 != 0 sai && 1== 0) sai
+                      
+        v=2
+                 if (pG->W[u=7][v=2] != NO_EDGE && mark[v=2] == 0)
+                (0 != 0 sai && 1== 0) s bq
+                      
+        v=3
+                 if (pG->W[u=7][v=3] != NO_EDGE && mark[v=3] == 0)
+                (0 != 0 SAI ) s - bo qua
+                      
+        v=4
+                if (pG->W[u=7][v=4] != NO_EDGE && mark[v=4] == 0)
+                (0 != 0 sai ) s
+                      
+        v=5
+                 if (pG->W[u=7][v=5] != NO_EDGE && mark[v=5] == 0)
+                (0!= 0 sai && ) s
+                      
+        v=6
+                if (pG->W[u=7][v=6] != NO_EDGE && mark[v=6] == 0)
+                (6 != 0 && 0 == 0) dung
+                     
+        v=7
+                if (pG->W[u=7][v=7] != NO_EDGE && mark[v=7] == 0)
+                (0 != 0 sai &&) sai
+                      
+        v=8
+                if (pG->W[u=7][v=8] != NO_EDGE && mark[v=8] == 0)
+                (1 != 0  0== 0) d
+                        if (pi[u=7] + pG->W[u=7][v=8] < pi[v=8])
+                        (26 + 1 < 28)
+                        {
+                        pi[v=8] = pi[u=7] + pG->W[u=7][v=8]= 26 + 1= 27;
+                        p[v= 8] = u=7;
+                        }
+        
+
+

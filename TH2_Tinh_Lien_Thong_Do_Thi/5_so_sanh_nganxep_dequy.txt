@@ -1,0 +1,1 @@
+Thứ tự duyệt DFS dùng ngăn xếp và đệ quy là khác nhau. Muốn có kết quả giống nhau thì khi xét các đỉnh kề của u trong thuật toán duyệt DFS dùng ngăn xếp, ta xét đỉnh có trị số lớn đưa ngăn xếp trước. 
